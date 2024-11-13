@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Kişisel Bilgiler Formu</title>
+    <style>
+ 
+        h1{
+         font-size:300%;
+         color: rgb(40, 113, 41);
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        label {
+            display: block;
+            margin-top: 20px;
+            color:rgb(40, 113, 41);
+            font-size:large;
+        }
+        input, select {
+            border: 2px solid mediumseagreen;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        button {
+            background-color: rgb(3, 83, 39);
+            border: 2px solid mediumseagreen;
+            margin-top: 15px;
+            padding: 10px 15px;
+            font-size: large;
+            color:rgb(162, 213, 86);
+        }
+    </style>
+</head>
+<body>
+    <h1>Kişisel Bilgiler Formu</h1>
+    <form method="post" action="bilgi.php">
+        <h2>
+        <label for="ad">Ad:</label>
+        <input type="text" id="ad" name="ad" placeholder="Ad" ><br>
+        </h2>
+
+        <h2>
+        <label for="soyad">Soyad:</label>
+        <input type="text" id="soyad" name="soyad" placeholder="Soyad"><br>
+        </h2>
+
+        <h2>
+        <label for="yas">Yaş:</label>
+        <input type="number" id="yas" name="yas" placeholder="Yaş"><br>
+        </h2>
+
+         <h2>
+        <label for="egitimDurumu">Eğitim Durumu:</label>
+        <select id="egitim_durum" name="egitim_durum">
+            <option value="ortaokul">Ortaokul</option>
+            <option value="lise">Lise</option>
+            <option value="universite">Üniversite</option>
+        </select><br>
+         </h2>
+
+        <h2>
+        <label for="okuduguKitaplar">Okuduğu Kitaplar:</label>
+        <input type="text" id="okudugu_kitap" name="okudugu_kitap" placeholder="Okuduğu Kitaplar"><br>
+        </h2>
+
+        <h2>
+        <label for="kitapTurleri">Sevdiği Kitap Türleri:</label>
+        <select id="kitap_tur" name="kitap_tur" >
+            <option value="romantik">Romantik</option>
+            <option value="gerilim-korku">Gerilim-Korku</option>
+            <option value="şiir">Şiir</option>
+            <option value="tarih">Tarih</option>
+            <option value="mizah">Mizah</option>
+            <option value="psikoloji">Psikoloji</option>
+            <option value="ani">Anı</option>
+            <option value="biyografi">Biyografi</option>
+            <option value="gezi">Gezi</option>
+            <option value="fantastik">Fantastik</option>
+            <option value="roman">Roman</option>
+            <option value="hikaye">Hikaye</option>
+        </select><br>
+        </h2>
+         
+        <h2>
+        <label for="turk_yazar">Sevdiği Türk Yazarlar:</label>
+        <select  id="turk_yazar" name="turk_yazar" >
+           <option value="Halide Edip ADIVAR">Halide Edip Adıvar</option>
+           <option value="Ömer SEYFETTİN">Ömer Seyfettin</option>
+           <option value="Peyami Safa">Peyami Safa</option>
+           <option value="Reşat Nuri Güntekin">Reşat Nuri Güntekin</option>
+           <option value="Ahmet Hamdi Tanpınar">Ahmet Hamdi TAnpınar</option>
+           <option value="Sait Faik Abasıyanık">Sait Faik Abasıyanık</option>
+           <option value="Sabahattin Ali">Sabahattin Ali</option>
+           <option value="Kemal Tahir">Kemal Tahir</option>
+           <option value="Rıfat Ilgaz">Rıfat Ilgaz</option> 
+           <option value="Orhan Kemal">Orhan Kemal</option>
+           <option value="Tarık Buğra">Tarık Buğra</option>
+           <option value="Yusuf Atılgan">Yusuf Atılgan</option>
+           <option value="Yaşar Kemal">Yaşar Kemal</option>
+           <option value="Adalet Ağaoğlu">Adalet Ağaoğlu</option>
+           <option value="Oğuz Atay">Oğuz Atay</option>
+           <option value="Sevgi Soysal">Sevgi Soysal</option>
+           <option value="Ferit Edgü">Ferit Edgü</option>
+           <option value="Tezer Özlü">Tezer Özlü</option>
+           <option value="Gülten Akın">Gülten Akın</option>
+           <option value="Orhan Pamuk">Orhan Pamuk</option>
+           <option value="Elif Şafak"></option>
+        </select><br>
+        </h2>
+
+        <h2>
+            <label for="yabanci_yazar ">Sevdiği Yabancı Yazarlar:</label>
+            <select  id="yabanci_yazar" name="yabanci_yazar" >
+               <option value="William Shakespeare ">William Shakespeare</option>
+               <option value="Jane Austen">Jane Austen</option>
+               <option value="Fyodor Dostoevsky">Fyodor Dostoevsky</option>
+               <option value="Anton Çehov">Anton Çehov</option>
+               <option value="Franz Kafka">Franz Kafka</option>
+               <option value="Leo Tolstoy">Leo Tolstoy</option>
+               <option value="Gabriel Garcia Marquez">Gabriel Garcia Marquez</option>
+               <option value="Virginia Woolf">Virginia Woolf</option>
+               <option value="Charles Dickens">Charles Dickens</option> 
+            </select> <br>
+        </h2>
+    
+        <button type="submit">Gönder</button>
+    </form> 
+</body>
+</html>
